@@ -15,7 +15,7 @@ public class SumOfSubsequenceonce{
         return true;
         
         sum_cal -= arr.get(arr.size()-1);
-        arr.remove(idx);
+        arr.remove(arr.size()-1);
         if(PrintSubsequence(idx + 1, arr, a, sum_cal, k))
         return true;
         return false;
